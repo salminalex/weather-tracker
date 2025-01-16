@@ -6,15 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C0E63362D38918300AE7B38 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 1C0E63352D38918300AE7B38 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1C0E63152D38906500AE7B38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1C0E62FB2D38906400AE7B38 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C0E63022D38906400AE7B38;
-			remoteInfo = WeatherTracker;
-		};
-		1C0E631F2D38906500AE7B38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1C0E62FB2D38906400AE7B38 /* Project object */;
 			proxyType = 1;
@@ -26,7 +23,6 @@
 /* Begin PBXFileReference section */
 		1C0E63032D38906400AE7B38 /* WeatherTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C0E63142D38906500AE7B38 /* WeatherTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C0E631E2D38906500AE7B38 /* WeatherTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,11 +36,6 @@
 			path = WeatherTrackerTests;
 			sourceTree = "<group>";
 		};
-		1C0E63212D38906500AE7B38 /* WeatherTrackerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WeatherTrackerUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,17 +43,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0E63362D38918300AE7B38 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1C0E63112D38906500AE7B38 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C0E631B2D38906500AE7B38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,7 +62,7 @@
 			children = (
 				1C0E63052D38906400AE7B38 /* WeatherTracker */,
 				1C0E63172D38906500AE7B38 /* WeatherTrackerTests */,
-				1C0E63212D38906500AE7B38 /* WeatherTrackerUITests */,
+				1C0E63342D38918300AE7B38 /* Frameworks */,
 				1C0E63042D38906400AE7B38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,9 +72,15 @@
 			children = (
 				1C0E63032D38906400AE7B38 /* WeatherTracker.app */,
 				1C0E63142D38906500AE7B38 /* WeatherTrackerTests.xctest */,
-				1C0E631E2D38906500AE7B38 /* WeatherTrackerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1C0E63342D38918300AE7B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +103,7 @@
 			);
 			name = WeatherTracker;
 			packageProductDependencies = (
+				1C0E63352D38918300AE7B38 /* ComposableArchitecture */,
 			);
 			productName = WeatherTracker;
 			productReference = 1C0E63032D38906400AE7B38 /* WeatherTracker.app */;
@@ -140,29 +132,6 @@
 			productReference = 1C0E63142D38906500AE7B38 /* WeatherTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1C0E631D2D38906500AE7B38 /* WeatherTrackerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C0E632E2D38906500AE7B38 /* Build configuration list for PBXNativeTarget "WeatherTrackerUITests" */;
-			buildPhases = (
-				1C0E631A2D38906500AE7B38 /* Sources */,
-				1C0E631B2D38906500AE7B38 /* Frameworks */,
-				1C0E631C2D38906500AE7B38 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1C0E63202D38906500AE7B38 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				1C0E63212D38906500AE7B38 /* WeatherTrackerUITests */,
-			);
-			name = WeatherTrackerUITests;
-			packageProductDependencies = (
-			);
-			productName = WeatherTrackerUITests;
-			productReference = 1C0E631E2D38906500AE7B38 /* WeatherTrackerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -180,10 +149,6 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 1C0E63022D38906400AE7B38;
 					};
-					1C0E631D2D38906500AE7B38 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = 1C0E63022D38906400AE7B38;
-					};
 				};
 			};
 			buildConfigurationList = 1C0E62FE2D38906400AE7B38 /* Build configuration list for PBXProject "WeatherTracker" */;
@@ -195,6 +160,9 @@
 			);
 			mainGroup = 1C0E62FA2D38906400AE7B38;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C0E63332D38916600AE7B38 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1C0E63042D38906400AE7B38 /* Products */;
 			projectDirPath = "";
@@ -202,7 +170,6 @@
 			targets = (
 				1C0E63022D38906400AE7B38 /* WeatherTracker */,
 				1C0E63132D38906500AE7B38 /* WeatherTrackerTests */,
-				1C0E631D2D38906500AE7B38 /* WeatherTrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +183,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1C0E63122D38906500AE7B38 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C0E631C2D38906500AE7B38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +206,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C0E631A2D38906500AE7B38 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +213,6 @@
 			isa = PBXTargetDependency;
 			target = 1C0E63022D38906400AE7B38 /* WeatherTracker */;
 			targetProxy = 1C0E63152D38906500AE7B38 /* PBXContainerItemProxy */;
-		};
-		1C0E63202D38906500AE7B38 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1C0E63022D38906400AE7B38 /* WeatherTracker */;
-			targetProxy = 1C0E631F2D38906500AE7B38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,7 +339,6 @@
 				CODE_SIGN_ENTITLEMENTS = WeatherTracker/WeatherTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = L99552MPL7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -430,7 +377,6 @@
 				CODE_SIGN_ENTITLEMENTS = WeatherTracker/WeatherTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeatherTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = L99552MPL7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -507,50 +453,6 @@
 			};
 			name = Release;
 		};
-		1C0E632F2D38906500AE7B38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L99552MPL7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.salminalex.WeatherTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = WeatherTracker;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Debug;
-		};
-		1C0E63302D38906500AE7B38 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = L99552MPL7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.salminalex.WeatherTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = WeatherTracker;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,16 +483,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1C0E632E2D38906500AE7B38 /* Build configuration list for PBXNativeTarget "WeatherTrackerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C0E632F2D38906500AE7B38 /* Debug */,
-				1C0E63302D38906500AE7B38 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C0E63332D38916600AE7B38 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C0E63352D38918300AE7B38 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C0E63332D38916600AE7B38 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C0E62FB2D38906400AE7B38 /* Project object */;
 }
