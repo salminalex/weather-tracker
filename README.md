@@ -14,7 +14,6 @@ Demo weather app that demonstrates TCA & MVVM approaches. The app allows users t
 - Persist selected city using local storage (UserDefaults).
 - Fetch real-time weather data from [WeatherAPI.com](https://www.weatherapi.com/).
 - Demonstrates both TCA and MVVM architectural approaches with clean, modular, and testable code.
-- UI matches the provided Figma designs.
 
 ## Installation
 
@@ -40,6 +39,9 @@ Demo weather app that demonstrates TCA & MVVM approaches. The app allows users t
 5. Build and run the app:
    - Select a simulator or connect a physical device.
    - Press `Cmd + R` to build and run.
+
+## Achitecture selection
+Switch `mvvm` boolean flag in `App.swift` in oeder to switch app architecture.
 
 ## Requirements
 - Xcode 16 or later
