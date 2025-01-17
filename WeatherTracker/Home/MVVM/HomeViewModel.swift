@@ -74,7 +74,7 @@ final class HomeViewModel {
           /// 1006 code represents `No location found matching parameter query`
           /// https://www.weatherapi.com/docs/
         case .apiError(1006, _):
-          self.content = .empty
+          self.content = .noResults
 
         case let .apiError(_, message):
           self.errorMessage = message

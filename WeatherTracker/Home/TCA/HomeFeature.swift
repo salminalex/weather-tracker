@@ -82,7 +82,7 @@ struct HomeFeature {
             /// 1006 code represents `No location found matching parameter query`
             /// https://www.weatherapi.com/docs/
           case .apiError(1006, _):
-            await send(.updateContent(.empty))
+            await send(.updateContent(.noResults))
 
           case let .apiError(_, message):
             await send(.presentError(message))
