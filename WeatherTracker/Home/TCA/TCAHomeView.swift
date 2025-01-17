@@ -1,7 +1,7 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct HomeView: View {
+struct TCAHomeView: View {
   @Bindable var store: StoreOf<HomeFeature>
 
   var body: some View {
@@ -43,7 +43,7 @@ struct HomeView: View {
 }
 
 #Preview {
-  HomeView(
+  TCAHomeView(
     store: .init(
       initialState: HomeFeature.State(content: .empty),
       reducer: { HomeFeature() }

@@ -3,14 +3,36 @@ import ComposableArchitecture
 
 @main
 struct WeatherTrackerApp: App {
+
   var body: some Scene {
     WindowGroup {
-      HomeView(
+      rootView(
+        mvvm: true,
+        apiClient: .live(apiKey: "YOUR_API_KEY")
+      )
+    }
+  }
+
+  @ViewBuilder
+  func rootView(
+    mvvm: Bool,
+    apiClient: WeatherAPIClient
+  ) -> some View {
+    if mvvm {
+      MVVMHomeView(
+        viewModel: .init(
+          apiClient: apiClient,
+          persistenceClient: .liveValue,
+          clock: ContinuousClock()
+        )
+      )
+    } else {
+      TCAHomeView(
         store: .init(
-          initialState: HomeFeature.State(content: .empty),
+          initialState: HomeFeature.State(),
           reducer: {
             HomeFeature()
-              .dependency(\.weatherAPIClient, .live(apiKey: "YOUR_API_KEY"))
+              .dependency(\.weatherAPIClient, apiClient)
           }
         )
       )
